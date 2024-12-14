@@ -11,4 +11,7 @@ document.querySelector("#form_auth").addEventListener("submit", async (e) => {
             username: document.querySelector("#username").value,
             password: document.querySelector("#password").value
         })
+
+        const data = response.json();
+        console.log(data);
     });
