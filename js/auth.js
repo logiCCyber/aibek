@@ -14,4 +14,10 @@ document.querySelector("#form_auth").addEventListener("submit", async (e) => {
     });
         const data = await response.json();
         console.log(data);
+        
+        if(!data.status) {
+            alert("Login or password incorrect");
+        }
+
+        window.location.href = "/admin";
 });
