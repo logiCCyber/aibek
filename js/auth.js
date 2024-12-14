@@ -14,4 +14,5 @@ document.querySelector("#form_auth").addEventListener("submit", async (e) => {
 
         const data = response.json();
         console.log(data);
-    });
+    }
+});
