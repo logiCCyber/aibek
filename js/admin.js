@@ -3,4 +3,3 @@ document.addEventListener('DOMContentLoaded', async function() {
   const data = await response.json();
   console.log(data);
 });
-console.log("asdf");
