@@ -1,12 +1,5 @@
 document.addEventListener('DOMContentLoaded', async function() {
-  const response = await fetch("/admin", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    }
-  });
-
+  const response = await fetch("/admin");
   const data = response.json();
   console.log(data);
-  
 });
