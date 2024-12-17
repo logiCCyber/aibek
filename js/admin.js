@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', async function() {
   });
 
   const table = document.querySelector("#table_person");
-  persons.map(person => {
-    const element = `<tr><td>${person.name}</td><td>${person.position}</td><td>${person.salary}</td><td>${person.totalHours}</td><td>${person.totalSalary}</td></tr>`;
+  persons.map((person, index) => {
+    const element = `<tr><td>${index}</td><td>${person.name}</td><td>${person.position}</td><td>${person.salary}</td><td>${person.totalHours}</td><td>${person.totalSalary}</td></tr>`;
     table.insertAdjacentHTML("beforeend", element);
   });
   
