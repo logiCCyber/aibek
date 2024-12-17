@@ -7,5 +7,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     return { name: item.name, position: item.position, salary: item.salaryPerHour, totalHours: totalHours,  totalSalary: totalSalary };
   });
 
-  console.log(obj);
+  const table = document.querySelector("#table_person");
+  const element = "<tr><td>PRIVET</td></tr>";
+  table.append(element);
 });
