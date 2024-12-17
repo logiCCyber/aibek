@@ -9,5 +9,5 @@ document.addEventListener('DOMContentLoaded', async function() {
 
   const table = document.querySelector("#table_person");
   const element = "<tr><td>PRIVET</td></tr>";
-  table.insertAdjacentHTML("beforeend", html);
+  table.insertAdjacentHTML("beforeend", element);
 });
